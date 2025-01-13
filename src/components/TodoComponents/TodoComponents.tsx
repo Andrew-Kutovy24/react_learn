@@ -1,5 +1,5 @@
 import {FC, useEffect, useState} from "react";
-import ITodo from "../../models/TodoInterface.ts";
+import {ITodo} from "../../models/TodoInterface.ts";
 import TodoComponent from "./TodoComponent/TodoComponent.tsx";
 import {getTodos} from "../../services/todos.api.service.ts";
 
@@ -12,7 +12,6 @@ export const TodoComponents:FC = () => {
             .then(todos => setTodos(todos))
     }, []);
 
-    console.log(todos);
     return (
         <>
             {

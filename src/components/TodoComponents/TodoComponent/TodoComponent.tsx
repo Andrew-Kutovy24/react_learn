@@ -1,5 +1,5 @@
 import {FC} from "react";
-import ITodo from "../../../models/TodoInterface.ts";
+import {ITodo} from "../../../models/TodoInterface.ts";
 
 type MyPropsType = {
     todo: ITodo
