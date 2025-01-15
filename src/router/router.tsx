@@ -3,7 +3,6 @@ import UsersPage from "../pages/UsersPage.tsx";
 import CartComponent from "../components/CartComponent/CartComponent.tsx";
 
 export const router = createBrowserRouter( [
-    {path: '', element: <UsersPage/>, children: [
-            {path: 'cart/:userId', element: <CartComponent/>}
-        ]},
+    {path: '', element: <UsersPage/>},
+    {path: 'cart/:userId', element: <CartComponent/>}
 ])

@@ -6,7 +6,6 @@ const UsersPage = () => {
     return (
         <div className={style.main}>
             <div><UsersComponent /></div>
-            <hr/>
             <div><Outlet/></div>
         </div>
     );
