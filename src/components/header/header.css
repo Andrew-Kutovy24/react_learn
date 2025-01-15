@@ -1,8 +1,29 @@
+/* Убираем стили для списка */
 ul {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Размещаем элементы в ряд */
+    justify-content: space-evenly; /* Равномерное распределение элементов по ширине */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+    list-style-type: none; /* Убираем маркеры списка */
+    background-color: #f8f8f8; /* Можно добавить фон для выделения меню */
+    position: fixed; /* Фиксируем меню вверху */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Чтобы меню всегда было поверх */
 }
+
 li {
-    gap: 30px;
-    text-decoration: none;
+    margin: 0; /* Убираем отступы внутри li */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: black; /* Цвет текста ссылок */
+    font-size: 18px; /* Размер шрифта */
+    padding: 10px 15px; /* Внутренние отступы для кликабельной области */
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+a:hover {
+    color: #007BFF; /* Цвет текста при наведении */
 }

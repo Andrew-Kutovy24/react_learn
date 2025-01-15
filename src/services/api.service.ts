@@ -10,9 +10,5 @@ export const apiService = {
     getPosts: async ():Promise<{ posts:IPost[] }> => {
         return await fetch(urls.posts)
             .then(res => res.json())
-    },
-    getCarts: async (id:number) => {
-        return await fetch(urls.carts(id))
-            .then(res => res.json())
     }
 }
