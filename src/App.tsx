@@ -1,10 +1,13 @@
 import './App.css'
-import {FC} from "react";
+import PaginationComponent from "./components/PaginationComponent/PaginationComponent.tsx";
+import UsersComponent from "./components/UsersComponent/UsersComponent.tsx";
 
-const App:FC = () => {
+const App = () => {
   return (
     <>
-
+      <PaginationComponent/>
+        <hr/>
+        <UsersComponent/>
     </>
   )
 }
